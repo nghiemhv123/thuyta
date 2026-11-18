@@ -3,7 +3,7 @@ const BASE=251,MONTHS=["Tháng 12","Tháng 1","Tháng 2","Tháng 3","Tháng 4","
 const DEPTS=["Kinh doanh","Nhà hàng - Dịch vụ","Hành chính - Nhân sự","Tài chính - Kế toán","Kỹ thuật - IT","Khác"];
 const COL=["#2f7de1","#3b82f6","#22b8cf","#f08c4a","#e8985e","#6c7ae0"];
 const PCT=[28,18,12,15,17,10];
-const ROLES={admin:"Quản trị hệ thống",hr:"Nhân sự",viewer:"Người Dùng"};
+const ROLES={admin:"Quản trị hệ thống",hr:"Nhân sự",viewer:"Người Dùng",Manager:"Quản Lý",ManagerHR:"Trường Phòng Nhân Sự"};
 const ld=(k,d)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}};
 const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
 const seedEmp=[
