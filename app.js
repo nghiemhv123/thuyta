@@ -16,8 +16,8 @@ const seedEmp=[
  {id:"NV007",name:"Nguyễn Văn Nam",dept:"Nhà hàng - Dịch vụ",pos:"Phó phòng Nhà hàng",date:"2020-05-18",st:"Đang làm việc",kpi:96},
  {id:"NV008",name:"Lê Thu Hà",dept:"Hành chính - Nhân sự",pos:"Chuyên viên Nhân sự",date:"2021-11-08",st:"Đang làm việc",kpi:95}];
 const seedAcc=[
- {u:"admin",p:"admin123",name:"Nguyễn Văn A",role:"admin",on:true},
- {u:"nhansu",p:"hr12345",name:"Trần Thu Hằng",role:"hr",on:true},
+ {u:"admin",p:"thuyta123",name:"Hoàng Nghiêm",role:"admin",on:true},
+ {u:"hiennt",p:"thuyta123",name:"Nguyễn Thanh Hiền",role:"hr",on:true},
  {u:"xem",p:"view123",name:"Khách xem",role:"viewer",on:true}];
 const S={emp:ld("tt_emp",seedEmp),acc:ld("tt_acc",seedAcc),me:null,view:"dash",q:"",err:""};
 const me0=ld("tt_sess",null);if(me0)S.me=S.acc.find(a=>a.u===me0&&a.on)||null;
